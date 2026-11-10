@@ -1,0 +1,61 @@
+[project]
+name = "rag-normas"
+version = "0.1.0"
+description = "Open-source RAG over Banco Central do Brasil regulations (Pix), with hybrid search, citations and a real evaluation suite."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Victor Gabriel Andrade de Melo", email = "victor.845.melo@gmail.com" }]
+requires-python = ">=3.12"
+keywords = ["rag", "retrieval", "llm", "pix", "banco-central", "sqlite-vec", "onnx", "evaluation"]
+dependencies = [
+    "anyio>=4.6",
+    "genai-lens @ git+https://github.com/vicgamelo/genai-lens@886af8a3a17c1fd56b04e9c31a2b97811779222e",
+    "httpx>=0.28",
+    "mcp>=2.3",
+    "numpy>=2.1",
+    "onnxruntime>=1.20",
+    "sentencepiece>=0.2",
+    "snowballstemmer>=2.2",
+    "sqlite-vec>=0.1.6",
+    "uvicorn>=0.54",
+]
+
+[project.urls]
+Homepage = "https://github.com/vicgamelo/rag-normas"
+
+[project.scripts]
+rag-normas = "rag_normas.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+    "tokenizers>=0.21",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["models: needs the ONNX models downloaded (rag-normas models)"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF", "ASYNC"]
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.mypy]
+strict = true
+packages = ["rag_normas"]
+mypy_path = "src"
+
+[[tool.mypy.overrides]]
+module = ["snowballstemmer", "onnxruntime", "sqlite_vec"]
+ignore_missing_imports = true

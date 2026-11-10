@@ -1,0 +1,53 @@
+name: CI
+
+# Manual only: nothing runs on push, PR or tag.
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - run: uv sync --frozen
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run mypy
+      - run: uv run pytest -q -m "not models"
+
+  eval:
+    # Retrieval evaluation with the real models: fails if recall@5 or MRR@10 drop more than 0.03
+    # below eval/baseline.json, and posts the comparison with the committed results as the job summary.
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - run: uv sync --frozen
+      - uses: actions/cache@v4
+        with:
+          path: models
+          key: models-${{ hashFiles('src/rag_normas/models.py') }}
+      - run: uv run rag-normas models
+      - run: uv run rag-normas build
+      - run: uv run pytest -q -m models
+      - run: uv run rag-normas eval retrieval --out eval/results/retrieval-ci.json
+      - run: |
+          echo "### Retrieval (CI vs committed)" >> "$GITHUB_STEP_SUMMARY"
+          uv run rag-normas eval compare --base eval/results/retrieval.json --new eval/results/retrieval-ci.json >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: eval-results
+          path: eval/results/retrieval-ci.json
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t rag-normas .

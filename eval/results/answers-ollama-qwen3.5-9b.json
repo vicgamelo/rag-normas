@@ -1,0 +1,1443 @@
+{
+ "version": "0.1.0",
+ "llm": "qwen3.5:9b",
+ "environment": {
+  "python": "3.12.14",
+  "machine": "arm64",
+  "system": "Darwin"
+ },
+ "mode": "rerank",
+ "questions": 82,
+ "metrics": {
+  "answered_rate": 0.9429,
+  "abstention_on_unanswerable": 1.0,
+  "citation_rate": 1.0,
+  "citation_accuracy": 0.9545,
+  "invalid_citation_rate": 0.0,
+  "errors": 0,
+  "faithfulness": 0.9949,
+  "correct": 0.9848,
+  "correct_or_partial": 1.0,
+  "llm_latency_p50_ms": 13905
+ },
+ "per_question": [
+  {
+   "id": "q001",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O banco do recebedor deve bloquear cautelarmente os recursos quando houver suspeita de fraude na transação [2]. Esse bloqueio deve ser efetivado simultaneamente ao crédito na conta transacional do usuário recebedor [2]. A possibilidade de realizar o bloqueio cautelar deve constar do contrato firmado entre o usuário recebedor e o prestador de serviço de pagamento [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 39-B",
+    "Res. BCB 1/2020 (Regulamento), art. 39-B"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 29123,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q002",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Os participantes do Pix devem informar aos usuários finais que possuem chave registrada (celular ou e-mail) sobre a possibilidade de outros usuários terem conhecimento da existência dessa chave devido à implementação da funcionalidade de verificação [1]. Essa informação deve ser concedida em tempo hábil para permitir que o usuário solicite a exclusão da chave, se desejar, antes da implementação da funcionalidade [2].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 115",
+    "Res. BCB 1/2020 (Regulamento), art. 69"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 12241,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q003",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Os participantes do Pix se conectam ao DICT por intermédio da RSFN [1]. Essa conexão pode ser feita diretamente ou indiretamente, sendo o acesso indireto realizado através de um participante com acesso direto ao DICT [2]. A conexão entre participantes com e sem acesso direto é definida entre as partes, observando os manuais da RSFN e do SFN [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 47",
+    "Res. BCB 1/2020 (Regulamento), art. 48"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13490,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q004",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, os participantes podem estabelecer parcerias entre si para que um proveja soluções ou serviços específicos a outro [1]. O participante que contrata o provimento é integralmente responsável pelo cumprimento das exigências do Regulamento na oferta dos serviços ao usuário final [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 90-D"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 14849,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q005",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Entre 3 e 15 de novembro de 2020, o Pix entrou em funcionamento com a participação obrigatória para instituições aprovadas pelo Banco Central nas etapas cadastral e homologatória [3]. Nesse período, estavam disponíveis todas as funcionalidades do DICT [3]. A operação restrita havia começado no dia 3 de novembro de 2020, conforme estabelecido na Resolução BCB nº 1/2020 [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 105",
+    "Res. BCB 1/2020, art. 9"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 12385,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q006",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, a iniciação por aproximação de um Pix Cobrança pode ser disponibilizada pelos provedores de contas transacionais diretamente por meio de seu aplicativo [1]. No entanto, se o participante ofertar esse serviço, deve seguir as especificações do Manual de Padrões para Iniciação do Pix a partir de 1º de dezembro de 2025 [3].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 11-DA",
+    "Res. BCB 1/2020 (Regulamento), art. 11-E"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 16020,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q007",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, a notificação de infração pode estar associada a uma solicitação de devolução [1]. Isso ocorre quando há fundada suspeita do uso do arranjo para a prática de fraude e a notificação é vinculada à solicitação de devolução [2].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 78-H",
+    "Res. BCB 1/2020 (Regulamento), art. 41-I"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13700,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q008",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, as regras gerais do Pix se aplicam ao Pix com finalidade de saque ou de troco [1]. Isso ocorre salvo expressa disposição em contrário na Subseção correspondente [1]. As definições para essas finalidades devem ser consideradas conforme o Regulamento do Pix [2]. O Pix Saque é definido como a transação onde o usuário recebe recursos em espécie após enviar um Pix para um facilitador ou agente de saque [3]. O Pix Troco é definido como a transação onde o usuário recebe recursos em espécie correspondentes à diferença entre o valor do Pix e o valor da compra realizada no agente de saque [4].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 11-J",
+    "Res. BCB 19/2020, art. 7-A",
+    "Res. BCB 1/2020 (Regulamento), art. 11-F",
+    "Res. BCB 1/2020 (Regulamento), art. 11-G"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13542,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 5,
+   "supported": 5,
+   "correct": "yes"
+  },
+  {
+   "id": "q009",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O rito para as devoluções da funcionalidade de recuperação de valores é detalhado no Manual Operacional do DICT [1]. Este manual deve incluir os prazos máximos para a manutenção do bloqueio e para a concretização da devolução [1]. Além disso, o manual deve prever a realização de múltiplos bloqueios ou devoluções parciais [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 41-E"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 15215,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q010",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O DICT impede a coleta de dados em massa ao retornar todas as informações vinculadas à chave consultada apenas quando há registro, enviando mensagem de erro caso não esteja registrado [1]. Além disso, ele exige que as consultas tenham propósitos específicos, como iniciar um Pix ou verificar segurança, e não para fins genéricos [4]. O sistema também monitora casos de excessivas consultas que não resultem em liquidação ou estejam registradas no DICT, exigindo dos participantes procedimentos de identificação e tratamento dessas ocorrências [5]. Por fim, a consulta para fins de segurança deve ser destinada a alimentar mecanismos de análise de fraude, inclusive em processos não diretamente relacionados ao Pix [2].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 77",
+    "Res. BCB 1/2020 (Regulamento), art. 75",
+    "Res. BCB 1/2020 (Regulamento), art. 84-B",
+    "Res. BCB 1/2020 (Regulamento), art. 78-K"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13320,
+   "has_citation": true,
+   "cites_relevant": false,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q011",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O Pix Cobrança permite gerenciar pagamentos imediatos, relativos a modelos de negócio onde o pagamento deve ser feito no momento da emissão da cobrança [1]. Também abrange pagamentos com vencimento, que podem ser realizados em data futura e contemplam juros, multas ou outros acréscimos [1]. Por fim, inclui pagamentos referentes à facilitação do serviço de saque, destinados ao recebimento de transações Pix para disponibilização de recursos em espécie [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 11-A"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 16991,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q012",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Uma instituição pode consultar o DICT para iniciar um Pix [1]. Também pode consultá-lo para identificar os dados da conta transacional vinculada à chave Pix, com fins de credenciamento para limite diferenciado de valor [1]. Outra finalidade é executar verificações de segurança pelo detentor da conta em transações iniciadas por meio de serviço de iniciação de transação de pagamento [1]. A consulta permite ainda a identificação de informações vinculadas ao titular de contas transacionais ou à chave Pix consultada [2].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 75",
+    "Res. BCB 338/2023 (Anexo I), art. 2"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 16582,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q013",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, o contrato deve estipular a obrigatoriedade do uso da marca em conformidade com o Regulamento e o Manual de Uso [1]. Além disso, o contrato deve prever regras para o uso da marca nos anúncios de instrumentos de pagamento aceitos pelo estabelecimento comercial [1]. O contrato também deve incluir cláusulas sobre a possibilidade de suspensão da aceitação ou resolução unilateral do negócio em caso de infrações graves às regras de uso da marca [2].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 19",
+    "Res. BCB 1/2020 (Regulamento), art. 19"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 39529,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q014",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, uma instituição em processo de adesão pode usar a marca Pix durante o período anterior à divulgação da relação das instituições aprovadas, desde que observado o disposto no Regulamento e no Manual de Uso da Marca [1]. No entanto, caso essa instituição decida cancelar voluntariamente o processo ou não seja aprovada nas etapas cadastral ou homologatória, fica proibido de utilizar a marca para fins comerciais ou promocionais [1]. A licença para uso da marca é conferida aos participantes apenas a partir do momento em que são aceitos como participantes do Pix [5].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 102",
+    "Res. BCB 1/2020 (Regulamento), art. 16"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 16707,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q015",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O comprovante deve discriminar o valor dos recursos em espécie disponibilizados [1]. Além disso, no caso de Pix Troco, é necessário informar também o valor da compra e o valor total da transação [1]. Caso a incidência de tarifa não possa ser determinada no momento da prestação do serviço, o comprovante deve informar o valor da tarifa passível de cobrança [2].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 11-H",
+    "Res. BCB 19/2020, art. 7"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 12679,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q016",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O Banco Central define o nível de serviço para a execução das funcionalidades disponibilizadas pelo DICT no Manual de Tempos do Pix [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 55"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 8730,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 1,
+   "supported": 1,
+   "correct": "yes"
+  },
+  {
+   "id": "q017",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Os participantes com acesso direto ao DICT devem zelar pela segurança e sigilo das ordens, manter-se conectado durante o funcionamento do sistema e pagar tempestivamente os valores devidos [1]. Eles também têm o dever de informar imediatamente qualquer irregularidade observada no funcionamento do DICT [1]. Além disso, devem prover adequadamente o serviço de acesso para participantes com acesso indireto e não utilizar informações obtidas para fins comerciais [1]. É obrigatório manter uma base de dados interna que replique os registros do DICT e mantê-la atualizada em relação a esses registros [1]. Por fim, devem disponibilizar chave Pix na base de dados interna somente após confirmar sua atualização no DICT e observar demais regulamentações técnicas do Banco Central [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 52"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 17241,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 9,
+   "supported": 9,
+   "correct": "yes"
+  },
+  {
+   "id": "q018",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, o banco deve permitir o agendamento de um Pix para determinada data futura no caso de pagamentos com vencimento [5].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 11-D"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 11212,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 1,
+   "supported": 1,
+   "correct": "yes"
+  },
+  {
+   "id": "q019",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Para participar do Pix, a instituição deve possuir capacidade técnica e operacional para cumprir os deveres previstos no Regulamento [1]. Além disso, é obrigatória a aprovação do Banco Central do Brasil quanto ao cumprimento dos requisitos do processo de adesão [3]. O processo de adesão compreende etapas que incluem uma homologatória com requisitos adequados à instituição pleiteante [2]. As instituições participantes também devem possuir cadastro no Sistema de Correio Eletrônico do Banco Central (BC Correio) [4].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 24",
+    "Res. BCB 1/2020 (Regulamento), art. 25",
+    "IN BCB 511/2024, art. 8",
+    "Res. BCB 1/2020 (Regulamento), art. 25-A"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13740,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q020",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Um Pix com finalidade de saque deve ser iniciado por meio dos mecanismos previstos no art. 12, caput, incisos II, III, IV ou VI [1]. Os recursos em espécie relativos ao serviço de saque serão disponibilizados imediatamente ao usuário pagador ou assim que por este demandado, conforme o modelo de negócio adotado [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 11-I"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13585,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q021",
+   "answerable": true,
+   "abstained": false,
+   "answer": "A marcação de fundada suspeita de fraude permanece vinculada ao CPF, CNPJ ou chave Pix pelo prazo de cinco anos [1]. Este período é contado a partir da data do registro da marcação no DICT [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 78-HD"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 24126,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q022",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Os participantes do Pix com acesso indireto ao DICT devem manter uma base de dados interna que replique os registros do DICT para as chaves Pix vinculadas às contas transacionais de seus usuários finais [1]. Eles também são obrigados a manter atualizados os registros dessa base de dados interna em relação aos registros do DICT [1]. Além disso, devem disponibilizar a chave Pix em sua base de dados interna somente após a confirmação de sua atualização no DICT [1]. Caso o participante proveja serviço de acesso direto ao DICT para o participante com acesso indireto, a base de dados interna pode ser mantida por este último [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 53"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 15812,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q023",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Depois que um Pix Cobrança é iniciado, deve-se observar o fluxo normal de um Pix, conforme disposto nos Capítulos VIII, IX e X do Regulamento [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 11-B"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13655,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q024",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Não, um cliente não pode consultar diretamente as informações de segurança vinculadas às chaves Pix, pois essa funcionalidade deve ser feita exclusivamente por iniciativa do próprio participante e é vedada a disponibilização para usuários finais [3]. A consulta serve apenas para alimentar os mecanismos de análise de fraude dos participantes [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 78-L",
+    "Res. BCB 1/2020 (Regulamento), art. 78-K"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 11714,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q025",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Não, nem todo banco é obrigado a oferecer Pix Automático, pois participantes que ofertam contas transacionais a usuários finais pessoas jurídicas podem requerer dispensa ao Banco Central do Brasil [1]. A obrigatoriedade aplica-se especificamente quando o banco atua como prestador de serviço ao usuário pagador [1]. Para esses casos obrigatórios, o participante deve disponibilizar as jornadas de autorização previstas no Regulamento do Pix [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 11-S"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 18089,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q026",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, as regras de uso da marca Pix aplicam-se à relação contratual entre o facilitador de serviço de saque e o agente de saque [1].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 20-A"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 29495,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 1,
+   "supported": 1,
+   "correct": "yes"
+  },
+  {
+   "id": "q027",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Não, o agente de saque não pode cobrar tarifas dos usuários pagadores pelo recebimento de Pix com finalidade de saque [1]. No entanto, o participante provedor de conta transacional do usuário pagador deve ressarcir os custos operacionais ao facilitador de serviço de saque, e este distribui parte desse valor livremente pactuado ao agente de saque [2][5].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 87-F",
+    "Res. BCB 1/2020 (Regulamento), art. 96-B",
+    "Res. BCB 1/2020 (Regulamento), art. 11-F"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 30804,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q028",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, uma instituição excluída do Pix por penalidade pode apresentar novo pedido de adesão após sessenta meses de sua exclusão [1]. Para isso, a instituição deve comprovar a cessação da prática ou da situação que motivou a penalidade [1]. O prazo de três anos mencionado no Manual para reincidência refere-se à possibilidade de nova punição, não ao período mínimo para reapresentar pedido de adesão após exclusão [2].",
+   "cited": [
+    "Res. BCB 1/2020 (Regulamento), art. 94-A",
+    "Res. BCB 507/2025 (Anexo I), art. 1"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 33231,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q029",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O Banco Central do Brasil detalhará os horários diferenciados para realização de transações de envio e recebimento de Pix durante a fase de operação restrita [1]. O Banco Central do Brasil também detalhará, em ato normativo específico, orientações sobre os horários diferenciados de funcionamento do DICT na mesma fase [2].",
+   "cited": [
+    "Res. BCB 1/2020, art. 10",
+    "Res. BCB 1/2020 (Regulamento), art. 106"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13488,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q030",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O Coordenador do Fórum Pix compete apresentar propostas de alterações nas regras do Pix [1]. Ele também deve analisar e responder às contribuições dos participantes sobre essas propostas [1]. Além disso, cabe a ele definir os temas das reuniões, sua periodicidade e a composição dos grupos de trabalho [1]. O Coordenador decide ainda sobre a constituição de comitês de autorregulação e coordena o encaminhamento das soluções aprovadas [1].",
+   "cited": [
+    "Res. BCB 1/2020, art. 7"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 16133,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q031",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, as cooperativas singulares de crédito que atuam por meio de contas de depósitos com finalidade específica e tenham como liquidante no SPI a instituição que operacionaliza essas contas são equiparadas às cooperativas singulares filiadas a uma cooperativa central de crédito [1]. Essa equiparação permite que elas se beneficiem das dispensas previstas para cooperativas filiadas, como a isenção da etapa de operação restrita na adesão ao Pix [2] e a dispensa dos testes formais de validação da prestação de serviço de iniciação de transação de pagamento [4].",
+   "cited": [
+    "IN BCB 511/2024, art. 102",
+    "IN BCB 511/2024, art. 46",
+    "IN BCB 511/2024, art. 40"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 15427,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q032",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Os testes de homologação para instituições que acessam o DICT de forma indireta devem ser definidos pelo participante com acesso direto contratado [1].",
+   "cited": [
+    "IN BCB 511/2024, art. 26"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 12979,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 1,
+   "supported": 1,
+   "correct": "yes"
+  },
+  {
+   "id": "q033",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Não, o pedido será indeferido independentemente do atendimento das demais condições do processo de adesão [1].",
+   "cited": [
+    "IN BCB 511/2024, art. 101"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 12253,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q034",
+   "answerable": true,
+   "abstained": false,
+   "answer": "A instituição pleiteante é comunicada acerca do resultado da etapa homologatória, contendo orientações sobre o envio da data sugerida para a efetiva alteração. [1]",
+   "cited": [
+    "IN BCB 511/2024, art. 64"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 17211,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q035",
+   "answerable": true,
+   "abstained": false,
+   "answer": "A janela dos testes formais de homologação do art. 43-A para instituições participantes do Pix é entre 10 de novembro de 2025 e 20 de novembro de 2025 [1].",
+   "cited": [
+    "IN BCB 511/2024, art. 98-A"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 14711,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 1,
+   "supported": 1,
+   "correct": "yes"
+  },
+  {
+   "id": "q036",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Uma instituição autorizada que deseja atuar exclusivamente como liquidante especial deve enviar o formulário de adesão ao Pix e o questionário de autoavaliação em segurança, ambos aprovados pelo Decem [1]. Esses documentos devem ser apresentados por meio do Protocolo Digital, seguindo as orientações do Anexo V [1]. O formulário de adesão segue o modelo do Anexo II-A e o questionário deve ser assinado pelo diretor responsável pela política de segurança cibernética [1].",
+   "cited": [
+    "IN BCB 511/2024, art. 17"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 19054,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 5,
+   "supported": 5,
+   "correct": "yes"
+  },
+  {
+   "id": "q037",
+   "answerable": true,
+   "abstained": false,
+   "answer": "A instituição é reprovada se não apresentar o projeto no prazo regulamentar [1]. Também é reprovada se não obtiver aprovação até a terceira versão do projeto [1]. Além disso, ocorre reprovação caso haja apresentação intempestiva do projeto por inobservância ao prazo de antecedência [5]. Por fim, a instituição é reprovada se houver pendências na análise da terceira e última versão do projeto [2].",
+   "cited": [
+    "IN BCB 511/2024, art. 34",
+    "IN BCB 511/2024, art. 27",
+    "IN BCB 511/2024, art. 33"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13848,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q038",
+   "answerable": true,
+   "abstained": false,
+   "answer": "A etapa de operação restrita é composta por duas fases: a fase 1 (1% a 30% dos usuários) e a fase 2 (mais que 30% até 70% dos usuários) [1]. O período total da etapa deve durar entre 14 e 56 dias [1]. Cada fase deve ter o mesmo período de duração, com no mínimo 7 dias e no máximo 28 dias isoladamente [1]. A fase 2 inicia-se no dia imediatamente posterior ao término da fase 1 [1].",
+   "cited": [
+    "IN BCB 511/2024, art. 48"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 12554,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q039",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, a instituição participante que reincidir em descumprimento do Regulamento do Pix anteriormente punido com a penalidade de advertência pode ter aplicada a penalidade de multa [2]. A regra também faculta essa aplicação de multa especificamente para casos de reincidência após advertência [1].",
+   "cited": [
+    "Res. BCB 507/2025 (Anexo I), art. 16",
+    "Res. BCB 507/2025 (Anexo I), art. 15"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 11076,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q040",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Antes da decisão definitiva, o direito de consultar o processo é restrito à instituição participante interessada, seus representantes legais ou mandatários [1].",
+   "cited": [
+    "Res. BCB 507/2025 (Anexo I), art. 3"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 10666,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 1,
+   "supported": 1,
+   "correct": "yes"
+  },
+  {
+   "id": "q041",
+   "answerable": true,
+   "abstained": false,
+   "answer": "A penalidade de advertência aplica-se à instituição participante que não cumprir regras relativas ao uso da marca Pix, iniciação de transações, divulgação de tarifas, oferta de API Pix, ressarcimento de custos, experiência do usuário, facilitação de saque ou descumprimento de determinações do Banco Central para fornecimento de informações [1].",
+   "cited": [
+    "Res. BCB 507/2025 (Anexo I), art. 14"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 14298,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 8,
+   "supported": 8,
+   "correct": "yes"
+  },
+  {
+   "id": "q042",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O prazo para apresentação de defesa após a notificação de abertura do processo é de trinta dias [1]. Este prazo será contado de forma contínua, excluindo-se o dia do início e incluindo-se o do vencimento [4]. Se o primeiro dia da contagem ou o dia do vencimento coincidirem com final de semana, feriado ou ponto facultativo, serão prorrogados para o primeiro dia útil seguinte [4].",
+   "cited": [
+    "Res. BCB 507/2025 (Anexo I), art. 4",
+    "Res. BCB 507/2025 (Anexo I), art. 7"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 15439,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q043",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Os atos e os termos processuais serão formalizados, comunicados e transmitidos prioritariamente em meio eletrônico [1]. O Banco Central do Brasil poderá utilizar a comunicação por via postal ou por ciência no processo apenas nas hipóteses em que essas opções se mostrarem mais eficientes [1]. Nas situações em que a comunicação ocorrer por meio físico, o documento será descartado após sua digitalização e inclusão nos autos do processo eletrônico [1].",
+   "cited": [
+    "Res. BCB 507/2025 (Anexo I), art. 2"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13852,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q044",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Você pode cancelar um Pix Agendado até às 23 horas e 59 minutos do dia imediatamente anterior ao dia para liquidação informado pelo cliente [1].",
+   "cited": [
+    "IN BCB 513/2024, art. 14"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 12784,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 1,
+   "supported": 1,
+   "correct": "yes"
+  },
+  {
+   "id": "q045",
+   "answerable": true,
+   "abstained": false,
+   "answer": "No âmbito do Pix Automático, o prestador deve ofertar funcionalidades para a gestão das autorizações concedidas, dos agendamentos realizados e das permissões recebidas pelo recebedor [1][2]. No âmbito do Pix Agendado, o prestador deve ofertar funcionalidade específica para a gestão dos agendamentos realizados [1].",
+   "cited": [
+    "IN BCB 513/2024, art. 10",
+    "IN BCB 513/2024, art. 11"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13503,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 2,
+   "correct": "partial"
+  },
+  {
+   "id": "q046",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Uma solicitação de autorização de Pix Automático deve ser mantida em aberto até a confirmação ou recusa pelo usuário pagador, o limite de trinta dias após o envio das informações da permissão pelo recebedor, ou o cancelamento da solicitação pelo prestador do usuário recebedor [1]. O prazo máximo de trinta dias pode ser menor, a critério exclusivo do usuário recebedor [1]. Caso o prazo seja ultrapassado ou a solicitação for cancelada, o prestador do usuário pagador deve excluir a solicitação [1].",
+   "cited": [
+    "IN BCB 513/2024, art. 3"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 16978,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q047",
+   "answerable": true,
+   "abstained": false,
+   "answer": "No âmbito do Pix Automático, a ordem de pagamento deve ser enviada para liquidação entre zero hora e oito horas do dia informado na instrução de pagamento [1].",
+   "cited": [
+    "IN BCB 513/2024, art. 7"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 15073,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 1,
+   "supported": 1,
+   "correct": "yes"
+  },
+  {
+   "id": "q048",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, o prestador de serviços de pagamento deve fazer a proposta do Pix Automático ao usuário pagador, inclusive caso este tenha agendado o pagamento da cobrança contida no QR Code [1]. Isso ocorre na jornada de autorização onde o usuário concede a autorização após aceitar uma proposta ou realizar um pagamento por meio de um QR Code [3].",
+   "cited": [
+    "IN BCB 513/2024, art. 4",
+    "Res. BCB 1/2020 (Regulamento), art. 11-Q"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 16059,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q049",
+   "answerable": true,
+   "abstained": false,
+   "answer": "A alteração na definição do horário de início do período noturno deve produzir efeito entre 24 e 48 horas após a solicitação do usuário [1].",
+   "cited": [
+    "IN BCB 512/2024, art. 13"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13784,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 1,
+   "supported": 1,
+   "correct": "yes"
+  },
+  {
+   "id": "q050",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, o banco pode acatar sua solicitação de aumento de limite, pois a resposta à solicitação é dada \"a critério do participante\" [2]. No entanto, esse aumento deve respeitar os limites máximos definidos na regulamentação, como R$ 3.000,00 no período diurno para saques e trocos [4]. O banco também pode estabelecer limites diferentes ou até zero com base no seu perfil de risco e comportamento [3][5].",
+   "cited": [
+    "IN BCB 512/2024, art. 12",
+    "IN BCB 512/2024, art. 6",
+    "IN BCB 512/2024, art. 10",
+    "IN BCB 512/2024, art. 3"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 18677,
+   "has_citation": true,
+   "cites_relevant": false,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q051",
+   "answerable": true,
+   "abstained": true,
+   "answer": "Não encontrei informação sobre o prazo de resposta para solicitação de redução do limite nos trechos fornecidos. Os textos detalham apenas o prazo para aumento do limite (24 a 48 horas ou até 8 horas) [1][2].",
+   "cited": [
+    "IN BCB 512/2024, art. 12",
+    "IN BCB 512/2024, art. 10"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 16033
+  },
+  {
+   "id": "q052",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O período noturno compreende, em geral, o intervalo entre as 20 horas e as 6 horas [1]. Caso haja solicitação do usuário final, esse período pode ser alterado para entre as 22 horas e as 6 horas [1]. Se o período noturno for estendido para as 22 horas, o período diurno passa a compreender o intervalo entre as 6 horas e as 22 horas [1]. Os horários referem-se ao domicílio cadastral do usuário ou ao horário de Brasília, a critério do participante [1].",
+   "cited": [
+    "IN BCB 512/2024, art. 3"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13185,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q053",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, existe um limite máximo de valor diário para a iniciação de transações do Pix Agendado por conta transacional para usuários pagadores pessoa física [1]. Este limite deve ser estabelecido com base no perfil de risco e de comportamento do usuário [1]. Para fins de confirmação de agendamento, deve-se observar o limite deduzindo os valores de eventuais agendamentos já realizados para a mesma data de liquidação [1]. Na data da efetiva liquidação da transação, deve ser observado o limite disponível do Pix Agendado [1].",
+   "cited": [
+    "IN BCB 512/2024, art. 7"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 17862,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q054",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O Departamento de Atendimento Institucional (Deati) é a unidade responsável por apreciar os requerimentos apresentados pelos entes aderentes [1].",
+   "cited": [
+    "Res. BCB 338/2023 (Anexo I), art. 7"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 10444,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 1,
+   "supported": 1,
+   "correct": "yes"
+  },
+  {
+   "id": "q055",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, órgãos públicos (entes públicos) podem solicitar acesso direto ao DICT e aderir a este regulamento [1]. Ao fazer isso, eles declaram estar cientes de que a responsabilidade pela exatidão dos dados é dos participantes do Pix [1]. As funcionalidades disponíveis para quem tem acesso direto ao DICT incluem registro, exclusão, alteração, portabilidade, reivindicação de posse e consulta entre outras [3]. A verificação de chaves Pix registradas é uma funcionalidade facultativa para participantes com acesso direto ou indireto ao DICT [4]. O DICT acata pedidos de registro exceto se a chave já estiver registrada ou vinculada a conta de outro participante [5].",
+   "cited": [
+    "Res. BCB 338/2023 (Anexo I), art. 3",
+    "Res. BCB 1/2020 (Regulamento), art. 54",
+    "Res. BCB 1/2020 (Regulamento), art. 78-B",
+    "Res. BCB 1/2020 (Regulamento), art. 58"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 16012,
+   "has_citation": true,
+   "cites_relevant": false,
+   "claims": 5,
+   "supported": 5,
+   "correct": "yes"
+  },
+  {
+   "id": "q056",
+   "answerable": true,
+   "abstained": false,
+   "answer": "As informações do DICT devem ser utilizadas exclusivamente para fins de apuração de irregularidades em que o titular dos dados estiver envolvido [1]. Esse uso é permitido quando houver consentimento do interessado ou quando estiver presente outra hipótese legal autorizativa [1]. O acesso direto ao DICT só pode ser concedido a entes públicos com atribuições legais de persecução penal, controle ou apuração de irregularidades [2].",
+   "cited": [
+    "Res. BCB 338/2023, art. 5",
+    "Res. BCB 338/2023, art. 2"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13181,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q057",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, o banco pode cobrar tarifa de pessoa física para enviar Pix, exceto quando a finalidade for transferência, compra ou saque/troco até o limite de oito transações por mês [3]. A cobrança é permitida se a transação não se enquadrar nas finalidades gratuitas listadas no art. 3º da Res. BCB 19/2020 [3]. Para outras finalidades além das gratuitas, a instituição detentora da conta pode cobrar tarifas do cliente pessoa natural em decorrência de envio de recursos com as finalidades de saque ou troco que excedam o limite [1].",
+   "cited": [
+    "Res. BCB 19/2020, art. 3",
+    "Res. BCB 19/2020, art. 4"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 14495,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q058",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O valor da tarifa deve ser informado no comprovante de envio e recebimento de recursos [1]. Também deve constar no extrato ordinário da conta de depósitos, na conta de pagamento e no extrato anual consolidado de tarifas [1]. Caso não esteja nos extratos ordinários, deve aparecer no demonstrativo de utilização do serviço de iniciação de transação de pagamento [1]. Além disso, a instituição deve divulgar o valor em tabela de tarifas no seu sítio eletrônico e demais canais eletrônicos [1].",
+   "cited": [
+    "Res. BCB 19/2020, art. 7"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 12904,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q059",
+   "answerable": true,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13402
+  },
+  {
+   "id": "q060",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Quando a instituição utiliza apenas o serviço de conectividade do PSTI para acesso à RSFN, deve atestar os seguintes controles de segurança:\n\n1. Implementação de mecanismos de criptografia, prevenção e detecção de intrusão, além de proteção contra softwares maliciosos [1].\n2. Estabelecimento de rastreabilidade de transações com trilhas de auditoria fim-a-fim e definição de tempo de retenção das informações [1][2].\n3. Execução de gestão de cópias de segurança dos dados e das informações [1].\n4. Realização de avaliação e correção de vulnerabilidades, incluindo testes periódicos, varreduras físicas e testes de intrusão [1].\n5. Implementação de política de controle de acesso que limite o acesso a usuários autorizados e revise permissões periodicamente [1][2].\n6. Estabelecimento de múltiplos fatores de autenticação para acesso à rede corporativa a partir de ambientes externos [2].\n7. Uso de múltiplos fatores de autenticação para acesso administrativo nos ambientes internos de processamento do Pix [2].\n8. Possuir processo regular de avaliação e aplicação das correções de segurança [2].\n9. Implantação de mecanismos de proteção da rede, como regras de firewall e monitoramento de conexões externas [2].\n10. Definição de critérios para o estabelecimento e monitoramento de conexões com ambientes externos, especialmente em horários não convencionais [2].\n11. Segregação dos ambientes computacionais, limitando o acesso ao ambiente de produção e recursos críticos [2].\n12. Isolamento físico e lógico do ambiente de processamento do Pix dos demais sistemas, mantendo instância dedicada caso use nuvem pública [2].\n13. Gestão de certificados digitais com monitoramento do uso, controles para guarda e validação de certificados revogados [2].\n14. Implementação de política de gestão de fraudes com canal de reporte e sistema de identificação de transações atípicas [3].",
+   "cited": [
+    "IN BCB 667/2025, art. 5",
+    "IN BCB 667/2025, art. 5",
+    "IN BCB 667/2025, art. 5"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 24392,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 14,
+   "supported": 14,
+   "correct": "yes"
+  },
+  {
+   "id": "q061",
+   "answerable": true,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13905
+  },
+  {
+   "id": "q062",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, a dispensa temporária do limite de R$ 15 mil pode ser prorrogada por sucessivos períodos de no máximo noventa dias [2]. Essa prorrogação depende da instituição atender às exigências do art. 37, § 4º do Regulamento Anexo à Resolução BCB nº 1 e não ter apresentado deficiências ou falhas operacionais graves nos períodos anteriores [2].",
+   "cited": [
+    "IN BCB 667/2025, art. 8"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 9692,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q063",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Se o participante não efetuar o ressarcimento nos prazos estabelecidos, incidirá multa de mora de 2% e juros de mora de 1% ao mês sobre as posições devedoras [1]. A responsabilidade pela cobrança dessa não efetivação é do participante credor [1]. O atraso em um determinado mês não afeta os procedimentos dos meses subsequentes [1].",
+   "cited": [
+    "IN BCB 199/2021, art. 6"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 13614,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q064",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O ressarcimento é pago mensalmente, referente às transações do mês anterior, até o décimo dia útil de cada mês [1][2][4]. O pagamento deve ser realizado por meio de Transferência Eletrônica Disponível (TED) ou via mensagens do Grupo de Serviços STR/PAG [4]. A responsabilidade pela cobrança da não efetivação do ressarcimento no prazo correto é do participante credor [5].",
+   "cited": [
+    "IN BCB 199/2021, art. 4",
+    "IN BCB 199/2021, art. 1",
+    "IN BCB 199/2021, art. 3",
+    "IN BCB 199/2021, art. 6"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 17302,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q065",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O participante do Pix deve confirmar a identidade do usuário titular da conta [1]. Além disso, é obrigatório usar códigos de verificação ou autenticação em dois fatores [1]. Para isso, o banco pode solicitar informações pessoais como nome, CPF, telefone e número da conta [1], ou utilizar mecanismos seguros como tokens criptográficos e acesso biométrico [1].",
+   "cited": [
+    "IN BCB 491/2024, art. 4"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 12950,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q066",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Sim, você pode realizar transações Pix em dispositivos não cadastrados, desde que o valor da transação seja limitado a R$ 200,00 por operação e R$ 1.000,00 no dia [3]. Caso tente iniciar uma transação acima desses limites ou realize ações específicas como solicitação de registro de chave Pix, o participante do Pix deve informar a necessidade de cadastramento do dispositivo previamente [1]. Além disso, para valores superiores aos limites citados, é necessário validar cada ação individualmente através de outro dispositivo que esteja cadastrado para o mesmo usuário e conta [1].",
+   "cited": [
+    "IN BCB 491/2024, art. 9",
+    "IN BCB 491/2024, art. 8"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 15077,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 3,
+   "supported": 3,
+   "correct": "yes"
+  },
+  {
+   "id": "q067",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Os participantes do Pix que precisam enviar informações periódicas são aqueles enquadrados na modalidade de provedor de conta transacional e liquidante especial [1]. Essas informações devem ser enviadas conforme o disposto no Anexo I da Instrução Normativa BCB nº 32/2020 [2].",
+   "cited": [
+    "IN BCB 32/2020, art. 1",
+    "IN BCB 32/2020 (Anexo I)"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 12345,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 2,
+   "supported": 2,
+   "correct": "yes"
+  },
+  {
+   "id": "q068",
+   "answerable": true,
+   "abstained": false,
+   "answer": "O facilitador deve publicar as informações dos agentes de saque no formato de dados abertos, conforme definido na IN BCB 198/2021 [1]. Essas informações incluem nome, endereço, geolocalização, intenção de disponibilidade, produto, valor máximo e CNPJ do agente [2]. Além disso, o facilitador deve consultar se o agente está vinculado a outro facilitador de serviço de saque [1]. O contrato também deve prever a necessidade de observância das regras para Pix Saque ou Pix Troco [3].",
+   "cited": [
+    "IN BCB 198/2021, art. 1",
+    "IN BCB 313/2022, art. 1",
+    "Res. BCB 1/2020 (Regulamento), art. 11-L"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 16763,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q069",
+   "answerable": true,
+   "abstained": false,
+   "answer": "Os participantes do Pix que facilitam serviço de saque diretamente devem publicar nome, endereço, geolocalização, disponibilidade, produto, valor máximo e condições dos pontos de atendimento [1]. Caso a relação seja contratual com agente de saque, devem-se divulgar também o nome do agente e sua intenção de disponibilidade [2]. Para agentes sem endereço fixo, as informações de endereço e geolocalização tornam-se obrigatórias [2]. O facilitador deve ainda manter essas informações atualizadas conforme regras específicas [2].",
+   "cited": [
+    "IN BCB 313/2022, art. 2",
+    "IN BCB 313/2022, art. 1"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 16037,
+   "has_citation": true,
+   "cites_relevant": true,
+   "claims": 4,
+   "supported": 4,
+   "correct": "yes"
+  },
+  {
+   "id": "q070",
+   "answerable": true,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 8184
+  },
+  {
+   "id": "q071",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q072",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q073",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 9649
+  },
+  {
+   "id": "q074",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q075",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q076",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q077",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q078",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 3510
+  },
+  {
+   "id": "q079",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q080",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q081",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q082",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  }
+ ],
+ "judge": "gemma4:12b"
+}

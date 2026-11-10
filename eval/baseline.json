@@ -1,0 +1,22 @@
+{
+ "embedder": "e5-small-int8",
+ "note": "CI gate: recall@5 and mrr@10 may not drop more than 0.03 below these",
+ "modes": {
+  "bm25": {
+   "recall@5": 0.9,
+   "mrr@10": 0.7032
+  },
+  "vector": {
+   "recall@5": 0.7643,
+   "mrr@10": 0.6602
+  },
+  "hybrid": {
+   "recall@5": 0.8429,
+   "mrr@10": 0.7188
+  },
+  "rerank": {
+   "recall@5": 0.9,
+   "mrr@10": 0.8452
+  }
+ }
+}

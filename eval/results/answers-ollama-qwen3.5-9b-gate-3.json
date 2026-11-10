@@ -1,0 +1,202 @@
+{
+ "version": "0.1.0",
+ "llm": "qwen3.5:9b",
+ "environment": {
+  "python": "3.12.14",
+  "machine": "arm64",
+  "system": "Darwin"
+ },
+ "mode": "rerank",
+ "questions": 16,
+ "metrics": {
+  "answered_rate": 0.0,
+  "abstention_on_unanswerable": 1.0,
+  "citation_rate": 0.0,
+  "citation_accuracy": 0.0,
+  "invalid_citation_rate": 0.0,
+  "errors": 0,
+  "llm_latency_p50_ms": 7913
+ },
+ "per_question": [
+  {
+   "id": "q051",
+   "answerable": true,
+   "abstained": true,
+   "answer": "Não encontrei informação sobre o prazo de resposta para solicitação de redução do limite nos trechos fornecidos. Os textos detalham apenas o prazo para aumento do limite (24 a 48 horas ou até 8 horas) [1][2].",
+   "cited": [
+    "IN BCB 512/2024, art. 12",
+    "IN BCB 512/2024, art. 10"
+   ],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 10849
+  },
+  {
+   "id": "q059",
+   "answerable": true,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 8460
+  },
+  {
+   "id": "q061",
+   "answerable": true,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 8751
+  },
+  {
+   "id": "q070",
+   "answerable": true,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 3321
+  },
+  {
+   "id": "q071",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q072",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 7913
+  },
+  {
+   "id": "q073",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 8649
+  },
+  {
+   "id": "q074",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 4411
+  },
+  {
+   "id": "q075",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 8320
+  },
+  {
+   "id": "q076",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 4676
+  },
+  {
+   "id": "q077",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q078",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": "ollama",
+   "model": "qwen3.5:9b",
+   "llm_ms": 503
+  },
+  {
+   "id": "q079",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q080",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q081",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  },
+  {
+   "id": "q082",
+   "answerable": false,
+   "abstained": true,
+   "answer": "NÃO ENCONTREI",
+   "cited": [],
+   "invalid_citations": [],
+   "provider": null,
+   "model": null,
+   "llm_ms": 0
+  }
+ ],
+ "judge": "gemma4:12b"
+}

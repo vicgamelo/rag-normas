@@ -1,0 +1,9 @@
+.venv
+models
+data/raw
+data/*.sqlite
+data/*.tmp
+eval/results
+.git
+**/__pycache__
+.*_cache
